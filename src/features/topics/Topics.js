@@ -1,11 +1,11 @@
 import NewTopicForm from "../../components/NewTopicForm";
-import { Link } from "react-router-dom";
-import ROUTES from "../../app/routes";
 import { useSelector } from "react-redux";
 import { selectTopics } from "./topicsSlice";
+import { Link } from "react-router-dom";
+import ROUTES from "../../app/routes";
 
 export default function Topics() {
-  const topics = useSelector(selectTopics); // replace this with a call to your selector to select all the topics in state
+  const topics = useSelector(selectTopics);
 
   return (
     <section className="center">
